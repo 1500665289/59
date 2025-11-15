@@ -1,0 +1,59 @@
+<ThingDefs><List>
+<ThingDef Type="Building" Name="rbq" Parent="Lantern1">
+	<ThingName>肉便器</ThingName>	
+	<Desc>敌对宗门弟子的下场。</Desc>
+	<Tags>
+		<Tag Name="BasePractice" Level="10"/>
+		<Tag Name="AtkPractice" Level="1"/>
+		<Tag Name="Bury" Level="1"/>
+		<Tag Name="Puppet" Level="1"/>
+	</Tags>
+	<TexPath>Spr\Building\rbq2.png</TexPath>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<BlockLight>1</BlockLight>	
+	<ColliderKind>Across</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[0,4,0],
+		[4,3,4],
+		[0,4,0],
+		</Data>
+		<Offset>
+			<y>0.35</y>
+			<x>0</x>
+		</Offset>
+		<WorkOffset>
+			<li Index="0"  X="0.5" Y="0" Ang="0"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<OwnerCount>1</OwnerCount>
+		<WorkTexPath>Spr/building/rbq2s.png</WorkTexPath>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<HelperClass>BuildingHelperTomb</HelperClass>
+		<BagDrop>0</BagDrop>
+
+		<AutoUnLock>1</AutoUnLock>
+		<MaxWorker>4</MaxWorker>
+		<WorkAnimation>kszdpugong1,kszdpugong2,kszdpugong3,kszdpugong4</WorkAnimation>
+		<BasePracticeEffectiveness>45</BasePracticeEffectiveness>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>2</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.95</x>
+			<y>3.45</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+</List></ThingDefs>
