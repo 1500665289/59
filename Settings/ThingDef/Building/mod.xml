@@ -1,5 +1,5 @@
 <ThingDefs><List>
-<ThingDef Type="Building" Name="rbq" Parent="Lantern1">
+<ThingDef Type="Building" Name="rbq" Parent="BuildingBase">
 	<ThingName>肉便器</ThingName>	
 	<Desc>敌对宗门弟子的下场。</Desc>
 	<Tags>
